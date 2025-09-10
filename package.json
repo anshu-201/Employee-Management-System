@@ -1,0 +1,39 @@
+{
+  "name": "employee-management-system",
+  "version": "1.0.0",
+  "description": "A modern full-stack employee management system with React.js and MongoDB",
+  "main": "setup.js",
+  "scripts": {
+    "setup": "node setup.js",
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "start:backend": "cd backend && npm start",
+    "build:frontend": "cd frontend && npm run build",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "start": "concurrently \"npm run start:backend\" \"npm run dev:frontend\""
+  },
+  "keywords": [
+    "employee",
+    "management",
+    "react",
+    "mongodb",
+    "nodejs",
+    "express",
+    "fullstack"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
